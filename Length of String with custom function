@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int length_of_string(const string& s) {  //for first run, we can use parameter as a reference
+    int i=0,count_sring=0;
+    while(s[i]) {
+        i++;
+        count_sring++;
+    }
+    return count_sring;
+}
+
+int main()
+{
+   string s ="Ayonh";
+   cout<<length_of_string(s);
+   return 0;
+}
