@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+string insertChar(const string &s, char ch,int pos) {
+    string res = "";
+    for(int i=0;i<s.size();i++) {
+        if(i == pos) {
+            res.push_back(ch);
+        }
+        res.push_back(s[i]);
+    }
+    return res;
+}
+
+int main()
+{
+   string s ="ayon";
+   char ch = 'B';
+   cout<<insertChar(s,ch,2);
+   return 0;
+}
