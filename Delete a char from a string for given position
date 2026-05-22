@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+string deleteChar(const string &s, char ch) {
+    string res = "";
+    for(char c : s) {
+        if(c != ch) {
+            res.push_back(c);
+        }
+    }
+    return res;
+}
+
+int main()
+{
+   string s ="ayon";
+   char ch = 'y';
+   cout<<deleteChar(s,ch);
+   return 0;
+}
